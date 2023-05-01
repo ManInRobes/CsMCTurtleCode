@@ -13,10 +13,12 @@ local depth = tonumber(tArgs[1]) -- Depth of the excavation area
 if length < 1 then
     print("Excavate length must be positive")
     return
+end
 if width < 1 then
     print("Excavate width must be positive")
     return
-if height < 1 then
+end
+    if height < 1 then
     print("Excavate height must be positive")
     return    
 end
