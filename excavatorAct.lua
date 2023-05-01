@@ -340,7 +340,7 @@ while not done do
 			alternate = 1 - alternate
 		end
 	end
-	if not tryDown() || depth == hole then
+	if not tryDown() or depth == hole then
 		done = true
 		break
 	end
