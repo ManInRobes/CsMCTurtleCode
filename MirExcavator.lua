@@ -18,7 +18,7 @@ if width < 1 then
     print("Excavate width must be positive")
     return
 end
-    if height < 1 then
+    if depth < 1 then
     print("Excavate height must be positive")
     return    
 end
