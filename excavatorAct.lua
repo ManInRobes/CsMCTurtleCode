@@ -1,8 +1,8 @@
 local tArgs = { ... }
-if #tArgs ~= 1 then
-	print( "Usage: excavate <diameter>" )
-	return
-end
+-- if #tArgs ~= 1 then
+-- 	print( "Usage: excavate <diameter>" )
+-- 	return
+-- end
 -- Custom line
 if #tArgs ~= 2 then
 	print ("Usage: excavate <diameter> by <depth>")
