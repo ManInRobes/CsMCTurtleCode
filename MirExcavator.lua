@@ -5,6 +5,7 @@ if #tArgs ~ 3 then
     return
 end
 
+
 -- Mine to dimension...
 local length = tonumber tArgs[3] -- Length of the excavation area
 local width = tonumber tArgs[2] -- Width of the excavation area
