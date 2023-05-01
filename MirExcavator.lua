@@ -1,6 +1,6 @@
 -- Set the parameters for the excavation area
 local tArgs = { ... }
-if #tArgs ~ 3 then
+if #tArgs ~= 3 then
     print("The excavation area will be <depth>, <width>, <length> ")
     return
 end
