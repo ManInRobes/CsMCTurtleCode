@@ -3,6 +3,11 @@ if #tArgs ~= 1 then
 	print( "Usage: excavate <diameter>" )
 	return
 end
+-- Custom line
+if #tArgs ~= 2 then
+	print ("Usage: excavate <diameter> by <depth>")
+	return
+end
 
 -- Mine in a quarry pattern until we hit something we can't dig
 local size = tonumber( tArgs[1] )
@@ -10,7 +15,12 @@ if size < 1 then
 	print( "Excavate diameter must be positive" )
 	return
 end
-	
+local hole = tonumber( tArgs[2] )
+if size < 1 then
+	print( "Excavate depth must be positive" )
+	return
+end
+
 local depth = 0
 local unloaded = 0
 local collected = 0
@@ -330,8 +340,7 @@ while not done do
 			alternate = 1 - alternate
 		end
 	end
-	
-	if not tryDown() then
+	if not tryDown() || depth == hole then
 		done = true
 		break
 	end
